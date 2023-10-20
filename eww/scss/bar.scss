@@ -1,0 +1,201 @@
+@import "./main.scss";
+
+.container {
+
+	.bar {
+		margin: 16px 24px;
+		margin-bottom: 0;
+
+		.left,
+		.center,
+		.right {
+			background-color: $color_1;
+			border-radius: 10px;
+			margin: 0 0px;
+		}
+
+		.left {
+			padding-right: 3px;
+
+			.battery {
+				padding-left: 12px;
+				padding-right: 12px;
+
+				.icon {
+					font-size: 20px;
+					margin-right: 10px;
+					color: $color_6;
+				}
+
+				.text {
+					color: $color_6;
+					font-weight: bold;
+				}
+			}
+
+			.brightness-container {
+				margin-left: 15px;
+
+				.icon {
+					font-size: 24px;
+					margin-right: 10px;
+					color: $color_7;
+				}
+
+				.brightness {
+					min-width: 200px;
+
+
+					trough {
+						background: $color_2;
+						border: 0;
+						border-radius: 6px;
+						min-height: 16px;
+
+						slider {
+							all: unset;
+						}
+
+						highlight {
+							background: $color_7;
+							border: 0;
+							border-radius: 6px;
+						}
+					}
+				}
+			}
+
+			.volume-container {
+				margin-left: 16px;
+				color_7
+				.icon {
+					font-size: 32px;
+					color: $color_7;
+					margin-right: 8px;
+				}
+
+				.volume {
+					min-width: 150px;
+
+					trough {
+						background: $color_2;
+						border: 0;
+						border-radius: 16px;
+						min-height: 16px;
+
+						slider {
+							all: unset;
+						}
+
+						highlight {
+							background: $color_7;
+							border: 0;
+							border-radius: 16px;
+						}
+					}
+				}
+			}
+
+			.workspace {
+				all: unset;
+				min-height: 10px;
+				min-width: 30px;
+				margin: 0 10px;
+
+				.ws-text {
+					font-size: 32px;
+				}
+			}
+		}
+
+		.center {
+			background-color: $color_1;
+			padding: 0 15px;
+			.time {
+				color: $color_9;
+				font-weight: bold;
+				font-size: 20px;
+			}
+
+			
+		}
+
+		.right {
+			background-color: $color_1;
+			padding: 0 15px;
+
+			.bluetooth-container {
+				.icon {
+					all: unset;
+					margin-right: 17px;
+					
+					label {
+						font-size: 21px;
+						font-weight: bold;
+						color: rgb(0, 68, 205);
+					}
+
+					&.on {
+						label{
+							color: $color_10;
+						}
+					}
+				}
+			}
+
+			.wifi-container {
+				.icon {
+					all: unset;
+					margin-right: 15px;
+
+					label {
+						font-size: 24px;
+						color: $color_4;
+					}
+				}
+
+				.text {
+					color: $color_4;
+					font-weight: bold;
+					margin-right: 17px;
+				}
+			}
+
+			.suspend-container {
+				.icon {
+					all: unset;
+					margin-right: 23px;
+
+					label {
+						font-size: 24px;
+						color: $color_7;
+					}
+				}
+			}
+
+			.restart-container {
+				.icon {
+					all: unset;
+					margin-right: 23px;
+					
+					label{
+						color: green;
+						font-size: 24px;
+					}
+				}
+			}
+
+			.turnoff-container{
+				.icon {
+					all: unset;
+					margin-right: 10px;
+
+					label{
+						font-size: 24px;
+						color: red;
+					}
+				}
+			}
+		}
+	}
+}

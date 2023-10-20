@@ -1,0 +1,26 @@
+#!/bin/bash
+
+status="$(cat "/sys/class/power_supply/BAT1/status")"
+per="$(cat "/sys/class/power_supply/BAT1/capacity")"
+charging=""
+icon=""
+
+if [ $per -gt 90 ]; then
+    icon="󰣐"
+elif [ $per -gt 60 ]; then
+    icon="󰁿"
+elif [ $per -gt 30 ]; then
+    icon="󰁼"
+elif [ $per -gt 10 ]; then
+    icon="󰁺"
+else
+    icon="󰂎"
+fi
+
+if [ $status = "Charging" ]; then
+    charging=" 󱐋"
+else
+    charging=""
+fi 
+
+echo "$icon$charging" && exit

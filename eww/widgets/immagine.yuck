@@ -1,0 +1,13 @@
+(defwindow immagine
+    :monitor 0 
+    :geometry (geometry
+        :anchor "center left"
+    )
+
+    :exclusive true
+    :stacking "bg"
+
+    (label  
+        :class "immagine"
+    )
+)
